@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Article Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <p class="logo">Medium</p>
+                <div id="hamberger"><i class='bx bx-menu hamberger'></i></div>
+                <ul class="nav-ul">
+                    <li>Our story</li>
+                    <li>Membership</li>
+                    <li>Write</li>
+                    <li>Sign in</li>
+                    <li class="get_started">Get started</li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="sub_head">
+                <p>Be part of a better internet. <a href="#">Get 20% off Membership for a limited time</a></p>
+            </div>
+            <div class="main_container">
+                <div class="main_text">
+                    <p class="text_1">Human<br>stories & ideas</p>
+                    <p class="text_2">A place to read, write, and deepen your understanding</p>
+                    <button>Start reading</button>
+                </div>
+                <div id="photo"><img src="images/image_1.jpg" ></div>
+            </div>
+
+        </main>
+        <footer>
+            <ul>
+                <li>Help</li>
+                <li>Status</li>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Blog</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Text to speech</li>
+                <li>Teams</li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        let screen_size = window.innerWidth;
+    if (screen_size < 768) {
+        document.getElementById("photo").style.display = "none";
+        }
+
+        document.querySelector(".hamberger").addEventListener("click", ()=> {
+            document.querySelector(".nav-ul").classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>
